@@ -1,0 +1,108 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header a {
+    color: #f4f4f9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #ffab00;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Events Section */
+#events {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#events table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#events th, #events td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#events th {
+    background-color: #333;
+    color: #fff;
+}
+
+#events tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Leaderboard Section */
+#leaderboard {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#leaderboard th, #leaderboard td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#leaderboard th {
+    background-color: #333;
+    color: #fff;
+}
+
+#leaderboard tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}

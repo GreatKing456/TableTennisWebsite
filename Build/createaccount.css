@@ -1,0 +1,97 @@
+body{
+    background-image: url("Images/orangeballbluetableaccount.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+h1{
+    text-align: center;
+}
+h4{
+    font-size: large;
+}
+
+#createaccountbox{
+    margin-right: 120px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgba(201, 217, 231, 0.566);
+    padding: 20px;
+}
+
+#playerdetailsbox{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgba(239, 166, 226, 0.325);
+    padding: 20px;
+}
+
+form{
+    padding: 5px;
+}
+
+#regisform input[type = "text"],
+#regisform input[type="password"],
+#regisform input[type="email"],
+#regisform input[type="number"]{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Style for the 'Back to Home' button */
+.back-home{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home button{
+    background-color: #333;
+    color: #f4f4f9;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-home button:hover {
+    background-color: #ffab00;
+}
+
+
+#reset{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+#submit{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+
+#submit:hover{
+    background-color: darkblue;
+}
+
+#reset:hover{
+    background-color: darkblue;
+}
+
+label[for="moreinfo"] {
+    top: -50px;
+    position: relative; 
+}

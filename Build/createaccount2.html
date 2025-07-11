@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>GTTA | CREATE ACCOUNT</title>
+            <link rel="stylesheet" type="text/css" href="createaccount.css">
+            <style>
+                .delete-account {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .delete-account button {
+                    background-color: #333;
+                    color: #f4f4f9;
+                    font-size: 16px;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .delete-account button:hover {
+                    background-color: #ffab00;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="createaccountbox">
+                <h1>Create Account</h1>
+                <div id="playerdetailsbox">
+                    <h4>Player Details:</h4>
+                    <form action="createaccount.php" target="_blank" method="post" id="regisform">
+                        <label for="fname">First name: &nbsp; &nbsp;</label>
+                        <input type="text" id="fname" name="fname" size="40" placeholder="Enter your first name here" required><br>
+                        <label for="mname">Middle name: </label>
+                        <input type="text" id="mname" name="mname" size="40" placeholder="Enter your middle name here" required><br>
+                        <label for="lname">Last name:  &nbsp; &nbsp;</label>
+                        <input type="text" id="lname" name="lname" size="40" placeholder="Enter your last name here" required><br><br>
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username" size="40" placeholder="Choose a unique username" required><br>
+                        <label for="gen">Gender:</label>
+                        <input type="radio" id="male" name="gen" value="Male" checked required>Male
+                        <input type="radio" id="female" name="gen" value="Female" required>Female
+                        <input type="radio" id="others" name="gen" value="Others" required>Others<br><br>
+                        <label for="taluka">Choose your Taluka:</label>
+                        <select name="geo" id="taluka" size="1" required>
+                            <option value="">Select option</option>
+                            <option value="Bardez">Bardez</option>
+                            <option value="Tiswadi">Tiswadi</option>
+                            <option value="Pernem">Pernem</option>
+                            <option value="Bicholim">Bicholim</option>
+                            <option value="Salcete">Salcete</option>
+                            <option value="Quepem">Quepem</option>
+                            <option value="Ponda">Ponda</option>
+                            <option value="Sattari">Sattari</option>
+                            <option value="Murmgao">Murmgao</option>
+                            <option value="Cancona">Cancona</option>
+                            <option value="Sanguem">Sanguem</option>
+                            <option value="Dharbandora">Dharbandora</option>
+                        </select><br><br>
+                        <label for="birthdate">Select your birth date:</label>
+                        <input type="date" id="birthdate" name="birthdate" required><br><br>
+                        <label for="email">Enter email:</label>
+                        <input type="email"id="email" name="email" required><br><br>
+                        <label for="age">Enter age:</label>
+                        <input type="number" id="age" name="age" min="7" max="80"><br><br>
+                        <label>Languages:</label><br>
+                        <input type="checkbox" id="lang1" name="languages[]" value="Hindi">
+                        <label for="lang1">Hindi</label>
+                        <input type="checkbox" id="lang2" name="languages[]" value="English">
+                        <label for="lang2">English</label>
+                        <input type="checkbox" id="lang3" name="languages[]" value="Marathi">
+                        <label for="lang3">Marathi</label><br>
+                        <label for="moreinfo" style="margin-top: -10px;">Tell us more about yourself:</label>
+                        <textarea id="moreinfo" name="moreinfo" rows="4" cols="50"></textarea><br>
+                        <label for="color">Favourite colour:</label>
+                        <input type="color"><br>
+                        <label for="">Date-time:</label>
+                        <input type="date">
+                        <input type="datetime-local"><br>
+                        <label for="">Aadharcard:</label>
+                        <input type="file"><br>
+                        <label for="">Lucky number from 1 to 10:</label>
+                        <input type="range" min="1" max="10"><br>
+                        <label for="">Enter website URL:</label>
+                        <input type="url"><br>
+                        <label for="">Search:</label>
+                        <input type="search"><br>
+                        <label for="">Create password:</label>
+                        <input type="password" minlength="8" name="password" required><br><br>
+                        <input id="reset" type="reset" value="reset values">  &nbsp; &nbsp; &nbsp;
+                        <input id="submit" type="submit" value="register"> 
+                        <div class="back-home">
+                            <button onclick="window.location.href='homepage.html'">Back to Home</button>
+                        </div>
+                        <div class="delete-account">
+                            <button onclick="window.location.href='dacc.php'">Delete Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>

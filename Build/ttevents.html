@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTTA | EVENTS</title>
+    <link rel="stylesheet" type="text/css" href="ttevents.css">
+    <script type="text/javascript">
+        function cantregis(){
+            alert("You cannot register since deadline has been reached!");
+        }
+        function registerForEvent(eventName, eventDate) {
+        const url = `regispayment.html?event=${encodeURIComponent(eventName)}&date=${encodeURIComponent(eventDate)}`;
+        window.location.href = url;
+        }
+
+    </script>
+</head>
+<body>
+
+    <header>
+        <a href="homepage.html">Home</a>
+        <a href="ttnews.html">News</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="ttevents.html">Events</a>
+        <a href="login.html">Login</a>
+        <a href="createaccount.html">Create Account</a>
+        <a href="dacc.php">Delete Account</a>
+        <a href="myAccount.php">MyAccount</a>
+        <a href="database.php">Database</a>
+        <a href="updatepage.php">UpdateInfo</a>
+    </header>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming and Finished Events</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Results</th>
+                    <th>Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="gst">Goa State Table Tennis Championship</td>
+                    <td id="gstdate">12th Dec 2024</td>
+                    <td>Upcoming</td>
+                    <td>-</td>
+                    <td> <button id="r1" onclick="registerForEvent('Goa State Table Tennis Championship', '12th Dec 2024')">
+                        Register
+                    </button></td>
+                </tr>
+                <tr>
+                    <td>National Table Tennis Tournament</td>
+                    <td>5th Nov 2024</td>
+                    <td>Finished</td>
+                    <td>1st: Rohan | 2nd: Vijay | 3rd: Arun</td>
+                    <td><button value="register" onclick="cantregis()">Register</button></td>
+                </tr>
+                <tr>
+                    <td id="ist">Inter-School Table Tennis Competition</td>
+                    <td id="istdate">20th Nov 2024</td>
+                    <td>Upcoming</td>
+                    <td>-</td>
+                    <td><button id="r2" onclick="registerForEvent('Inter-School Table Tennis Competition', '20th Nov 2024')">
+                        Register
+                    </button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player Name</th>
+                    <th>Points</th>
+                    <th>Events Won</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rohan Sharma</td>
+                    <td>1200</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Vijay Kumar</td>
+                    <td>1050</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arun Patil</td>
+                    <td>950</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Prakash Rao</td>
+                    <td>900</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; Goa Table Tennis Association. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

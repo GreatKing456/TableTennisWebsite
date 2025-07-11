@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Favorite Table Tennis Player</title>
+    <link rel="stylesheet" type="text/css" href="addplayer.css"> <!-- Optional CSS file -->
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Add Your Favorite Table Tennis Player</h1>
+        <form action="add_player.php" method="post">
+            <label for="playerName">Player Name:</label>
+            <input type="text" id="playerName" name="playerName" placeholder="Enter player's name" required><br><br>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter country name" required><br><br>
+            
+            <input type="submit" value="Add Player">
+        </form>
+    </div>
+
+</body>
+</html>

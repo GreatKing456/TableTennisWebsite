@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTTA | LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="openregis.js"></script>
+    <script>
+        function gotologout(){
+            window.location.href="logout.php";
+        }
+            
+    </script>
+    <style>
+        #logout{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logindiv">
+        <h1>LOGIN</h1>
+        <form action="login.php" target="_self" method="post" id="loginform">
+            <label for="">Enter username: </label>
+            <input type="text" id="username" name="username" size="30" placeholder="--username--" required><br>
+            <label for="">Enter password:  </label>
+            <input type="password" id="passwd" name="passwd" minlength="8" maxlength="20" size="30" placeholder="--password--" required><br>
+            <input type="submit" id="login" name="login" value="login"><br><br><br>
+            <label for="">Don't have an account? Create New</label><br>
+            <input id="signup" type="button" value="Signup" onclick="gotocreateaccount()"><br>
+            <label for="">Want to logout?</label><br>
+            <input type="button" id="logout" value="logout" onclick="gotologout()">
+        </form>
+        <div class="back-home">
+            <button onclick="window.location.href='homepage.html'">Back to Home</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

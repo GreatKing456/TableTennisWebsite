@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Payment</title>
+    <link rel="stylesheet" type="text/css" href="regispayment.css">
+</head>
+<body>
+    <h2>Event Registration & Payment</h2>
+
+    <div id="event-details">
+        <h3 id="event-name1"></h3>
+        <p id="event-date1"></p>
+    </div>
+
+    <form id="payment-form" action="regispayment.php" method="POST">
+        <input type="hidden" id="event-name2" name="event-name2" value="">
+        <input type="hidden" id="event-date2" name="event-date2" value="">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="payment">Payment Amount:</label>
+        <input type="text" id="payment" name="payment" value="500" readonly> 
+
+        <button type="submit">Complete Registration</button>
+    </form>
+
+    <script>
+        // Function to get query parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                eventName: params.get('event'),
+                eventDate: params.get('date')
+            };
+        }
+
+        // Set event details on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const { eventName, eventDate } = getQueryParams();
+            document.getElementById('event-name2').value = eventName;
+            document.getElementById('event-date2').value = eventDate;
+            document.getElementById('event-name1').textContent = `Event: ${eventName}`;
+            document.getElementById('event-date1').textContent = `Date: ${eventDate}`;
+        });
+
+    </script>
+</body>
+</html>

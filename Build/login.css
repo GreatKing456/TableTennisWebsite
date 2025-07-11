@@ -1,0 +1,103 @@
+body{
+    background-image:url("Images/redbatredbackgroundlogin.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    height: 100vh;
+
+}
+
+#logindiv{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    margin-right: 180px;
+    background-color: rgba(255, 255, 255, 0.571);
+    padding: 50px;
+}
+
+#loginform{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(226, 226, 15, 0.505);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label{
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+#login{
+    box-sizing: border-box;
+    color: aliceblue;
+    border-radius: 20px;
+    background-color: rgba(73, 73, 211, 0.941);
+    padding: 5px;
+}
+
+#signup{
+    box-sizing: border-box;
+    color: aliceblue;
+    border-radius: 20px;
+    background-color: rgba(223, 30, 236, 0.932);
+    padding: 5px;
+}
+
+#username{
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+
+#passwd{
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+#loginform input[type="submit"],
+#loginform input[type="button"] {
+        margin-top: 5px;
+        margin-left: 100px;
+        font-size: 16px;
+        cursor: pointer;
+ }
+
+ #loginform input[type="submit"]:hover{
+    background-color: rgba(27, 27, 109, 0.941);
+ }
+
+ #loginform input[type="button"]:hover{
+    background-color: rgba(114, 20, 121, 0.932);
+ }
+
+ /* Style for the 'Back to Home' button */
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home button {
+    background-color: #333;
+    color: #f4f4f9;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-home button:hover {
+    background-color: #ffab00;
+}
